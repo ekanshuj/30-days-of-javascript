@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --base:#00FF00;
+  --spacing:10px;
+  --blur:10px;
+}
+
+.magic {
+  color: var(--base);
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.controls {
+  font-size: 2.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0rem;
+}
+
+.img {
+  height: 30rem;
+  display: block;
+  margin: auto;
+  width: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: var(--spacing);
+  background: var(--base);
+  -webkit-filter: blur(var(--blur));
+          filter: blur(var(--blur));
+}
+/*# sourceMappingURL=styles.css.map */
