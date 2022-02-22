@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clock{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &::before{
+    position: absolute;
+    content: "";
+    background: url(./Images/bg.jpg) no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  &-face {
+    border: 0.9rem solid black;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  &-hand{
+    position: absolute;
+    border: 2px solid ghostwhite;
+    width: 50%;
+    left: 0;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+  }
+
+}
